@@ -1,7 +1,7 @@
 /* Common CSS */
 @font-face {
   font-family: dsifont;
-  src: url(/assets/dsi/nintendo_NTLGDB_001.ttf);
+  src: url(/font/nintendo_NTLGDB_001.ttf);
 }
 html * {
   font-family: dsifont;
@@ -15,7 +15,7 @@ h1
 }
 body
 {
-    font-size: 12px;
+    font-size: 14px;
 	background-color: #FFFFFF;
 }
 table
@@ -26,14 +26,38 @@ table
 }
 td
 {
-    padding: 2px;
+    padding: 0px; /* was 2 */
 }
 ul
 {
     padding: 0px;
     margin: 0px 12px;
 }
-
+.f8
+{
+    font-size: 10px;
+}
+.f12
+{
+    font-size: 12px;
+}
+.f16
+{
+    font-size: 16px;
+}
+.layout_grid {
+  layout-grid-type : fixed;
+  layout-grid-char : 30px;
+  layout-grid-line : 30px;
+  layout-grid-mode : both;
+}
+.standardPage {
+  position : absolute;
+  top   : 0px;
+  width : 240px;
+  margin  : 8 8  0 8;
+  padding : 0 0 22 0;
+}
 #up_url, #down_url
 {
     width: 95%;
@@ -43,4 +67,14 @@ ul
 {
     text-align: right;
     background-color: #CCC;
+}
+#output
+{
+    background-color: #CCFFCC;
+}
+#progress
+{
+    background-image: url("progress_bar.gif");
+  background-repeat: no-repeat;
+  background-position: -216px 0px;
 }

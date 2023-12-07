@@ -44,7 +44,7 @@ function GetDeviceInfo()
         info += "<tr><td>blue2th  MAC </td><td>" + r.bluetoothMACAddr         + "</td></tr>";
 		info += "</table>"
 		-->
-		<table border='1' class="f8">
+		<table border='1' class="f8" style="font-size: 8.5px;width:90%">
         <tr><td>pctrl flags  </td><td>1</td></tr>
         <tr><td>pctrl ogn    </td><td>1</td></tr>
         <tr><td>need sync    </td><td>false</td></tr>
@@ -138,32 +138,6 @@ function ConvertDate( msec )
 }
 
 </script>-->
-<style>
-body {
-	background-color: #FFFFFF;
-}
-.f8
-{
-    font-size: 8px;
-}
-.f12
-{
-    font-size: 12px;
-}
-.f16
-{
-    font-size: 16px;
-}
-table
-{
-    position: absolute;
-	top: 0px;
-}
-td
-{
-    padding: 0px 2px;
-}
-</style>
 </head>
 <!-- メモリ上での識別のため背景色を白(#FFFFFF)以外にしています -->
 <body bgcolor="#FEFDFF" onload="Init();">

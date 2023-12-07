@@ -1,3 +1,7 @@
+@font-face {
+  font-family: dsifont;
+  src: url(/font/nintendo_NTLGDB_001.ttf);
+}
 body {
 	width: 550px;
 	margin: 0 auto;
