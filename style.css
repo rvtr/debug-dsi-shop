@@ -1,0 +1,18 @@
+body {
+	width: 550px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+object {
+	width: 256px;
+	height: 192px;
+	border: 2px solid black;
+}
+.screenlabels {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.screenlabels div {
+	margin-bottom: -20px;
+}
