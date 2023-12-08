@@ -23,7 +23,7 @@
 </style>
   </head>
   <body>
-    <div id="content-wrap">
+    <div class="content-wrap">
       <div class="screenlabels">
       <a href="https://randommeaninglesscharacters.com/"><-- Main site</a> | <a href="/">Shop start page</a> | <a href="https://discord.gg/se9yQBeX3e" target="_blank">Discord</a> | <a href="https://github.com/rvtr/debug-dsi-shop" target="_blank"> GitHub </a>
     </div><hr>
@@ -31,13 +31,17 @@
     <div class="screenlabels">
       <div><h2><u>Top screen:</u></h2></div><div><h2><u>Bottom screen:</u></h2></div>
     </div>
+    <div class="screenlabels">
     {{ content }}
-    <br>
-    <div style="text-align: right;margin-right: 35px;">&uarr; I'm an interactive window! Try me!</div>
+    </div>
+    <div class="screenlabels" style="padding-top:5px;">
     {% if page.title == "Startup" -%}
+    <div></div>
     {%- else -%}
-    <i><a href="javascript:window.history.back()"><-- previous</a></i>
+    <div style="text-align: left;"><i><a href="javascript:window.history.back()"><-- previous</a></i></div>
     {%- endif %}
+    <div>&uarr; I'm an interactive window! Try me!</div>
+    </div>
     <br><br>
     <div style="text-align:left;">
       <hr>
@@ -46,18 +50,18 @@
 I have found 3 different versions of this app. I am not sure what the specific differences between the apps are.<br>
 I used the files from <i><b>shop.HNFC.Release.v1536</b></i> for my demo.
 <br><br>
-shop.HNFC.Release.v1536: <a href="https://archive.org/download/rmc-dsi/shop.HNFC.Release.v1536.srl">srl</a> | <a href="https://archive.org/download/rmc-dsi/shop.HNFC.Release.v1536.tad">tad</a><br>
+shop.HNFC.Release.v1536: <a href="https://cdn.randommeaninglesscharacters.com/rmc-prg/Shop/Shop_v1536.srl">srl</a> | <a href="https://cdn.randommeaninglesscharacters.com/rmc-prg/Shop/Shop_v1536.tad">tad</a><br>
 
-shop.HNFC.Release.14231: <a href="https://archive.org/download/rmc-dsi/shop.HNFC.Release.14231.srl">srl</a> | <a href="https://archive.org/download/rmc-dsi/shop.HNFC.Release.14231.tad">tad</a><br>
+shop.HNFC.Release.14231: <a href="https://cdn.randommeaninglesscharacters.com/rmc-prg/Shop/Shop_v14231.srl">srl</a> | <a href="https://cdn.randommeaninglesscharacters.com/rmc-prg/Shop/Shop_v14231.tad">tad</a><br>
 
-shop.HNFC.Release.thumb: <a href="https://archive.org/download/rmc-dsi/shop.HNFC.Release.thumb.srl">srl</a> | <a href="https://archive.org/download/rmc-dsi/shop.HNFC.Release.thumb.tad">tad</a><br>
+shop.HNFC.Release.thumb: <a href="https://cdn.randommeaninglesscharacters.com/rmc-prg/Shop/Shop_thumb.srl">srl</a> | <a href="https://cdn.randommeaninglesscharacters.com/rmc-prg/Shop/Shop_thumb.tad">tad</a><br>
 
 <br><br><span style="color:orange;">
 <i><b>shop.HNFC.Release.v1536.tad</b></i> is the only working version of the debug shop. It will only run if installed to NAND and booted via the home menu.<br>Using nds-bootstrap, unlaunch, or any similar apps will introduce problems like dead touch controls, a <b>293003</b> error, or cause the shop to whitescreen.</span>
 <br><br>
 </div>
-    </div>
     <hr>
-    <div style="text-align: center;font-size: 10px;padding-bottom: 5px;"><i>Copyright &copy; 2021-<span id="footerDate"></span> Lillian M. Skinner <a href="https://randommeaninglesscharacters.com/contact.html" class="text-reset fw-bold">Contact me.</a></i></div>
+    <div style="text-align: center;font-size: 10px;"><i>Copyright &copy; 2021-<span id="footerDate"></span> Lillian M. Skinner <a href="https://randommeaninglesscharacters.com/contact.html" class="text-reset fw-bold">Contact me.</a></i></div>
+    </div>
   </body>
 </html>
